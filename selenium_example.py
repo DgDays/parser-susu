@@ -4,7 +4,7 @@ from time import sleep
 driver = webdriver.Firefox()
 arr = {}
 driver.get("https://www.susu.ru/ru/plan/090301-2020-40-informatika-i-vychislitelnaya-tehnika-31658")
-sleep(3)
+sleep(0.6)
 page = driver.find_element(By.TAG_NAME,'tbody')
 mx_len = 0
 for i in page.find_elements(By.TAG_NAME, 'tr'):
